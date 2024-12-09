@@ -1,0 +1,26 @@
+﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp4.MainPage"
+             Title="Statystyki Temperatur">
+    <ScrollView>
+        <VerticalStackLayout Padding="20">
+            <Label Text="Statystyki Temperatur (Bar Chart)" FontSize="24" HorizontalOptions="Center" />
+
+            <Grid x:Name="BarChartGrid"
+                  HorizontalOptions="FillAndExpand"
+                  VerticalOptions="FillAndExpand"
+                  ColumnSpacing="10"
+                  RowSpacing="0">
+            </Grid>
+
+            <Label Text="Statystyki Temperatur (Pie Chart)" FontSize="24" HorizontalOptions="Center" Margin="20,40,20,20" />
+
+            <Grid x:Name="PieChartGrid"
+                  WidthRequest="300"
+                  HeightRequest="300"
+                  HorizontalOptions="Center"
+                  VerticalOptions="Center">
+            </Grid>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
